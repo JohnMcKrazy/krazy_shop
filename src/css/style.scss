@@ -5,11 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-HTML > * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 HTML {
     //¿GENERAL COLORS START
     --lightGray: hsl(0, 0%, 75%);
@@ -23,8 +18,9 @@ HTML {
     --T-Mid: all 750ms ease;
     --T-Slow: all 1000ms ease;
     //¿GENERAL START
-
+    --FC: red;
     --navHeight: 6rem;
+    --fullScreen: 100svh;
 
     font-size: 14px;
     font-weight: 400;
@@ -34,25 +30,27 @@ HTML {
     scroll-behavior: smooth;
 
     width: 100vw;
-    height: 100%;
-    min-height: 100svh;
+    height: 100svh;
+
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    overflow-x: hidden;
 }
+
+//!THEMES START
 .light_theme {
+    //¿COLORS
     --textColor: hsl(0, 0%, 0%);
     --bgColor: hsl(0, 0%, 100%);
-    --bgColorContrast: hsl(0, 0%, 0%);
-    --FC: skyblue;
+    //¿GENERALS
 }
 .dark_theme {
+    //¿COLORS
     --textColor: hsl(0, 0%, 100%);
     --bgColor: hsl(0, 0%, 0%);
-    --bgColorContrast: hsl(0, 0%, 100%);
-    --FC: red;
+
+    //¿GENERALS
 }
 .krazy_icon {
     .cls-1 {
@@ -73,23 +71,24 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
     position: relative;
     scroll-behavior: smooth;
     color: var(--textColor);
     background: var(--bgColor);
-    position: relative;
+    overflow-x: hidden;
     img {
         width: 100%;
+        height: auto;
     }
     a {
         background: none;
         text-decoration: none;
+        color: inherit;
     }
     a:visited,
     a:focus,
     a:active {
-        color: unset;
+        color: none;
     }
     ul {
         list-style: none;
@@ -157,17 +156,9 @@ body {
         fill: var(--textColor);
     }
 }
-
 .menu_btn {
     width: 3rem;
     height: 3rem;
-}
-.btns_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
 }
 .logo_container {
     height: 3rem;
@@ -184,18 +175,25 @@ body {
     right: 0;
     height: var(--navHeight);
     background: var(--bgColor);
-    z-index: 5;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 5;
+    .btns_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
 }
 .nav_menu {
     position: fixed;
     left: 0;
     top: var(--navHeight);
-    height: calc(100svh - var(--navHeight));
+    height: calc(var(--fullScreen) - var(--navHeight));
     background: var(--bgColor);
     z-index: 5;
     transform: translateX(-100%);
@@ -204,13 +202,18 @@ body {
         color: var(--textColor);
         width: 100%;
         padding: 0.5rem 1rem;
+        font-weight: 600;
         &:hover {
             background: var(--FC);
+            color: var(--whiteOff);
         }
     }
 }
+.open_menu {
+    transform: translateX(0);
+}
 HEADER {
-    height: 100svh;
+    height: var(--fullScreen);
     background: linear-gradient(transparent, var(--bgColor) 90%), url("https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center;
     background-size: cover;
     display: flex;
@@ -218,11 +221,12 @@ HEADER {
     align-items: center;
     text-align: center;
     font-size: 3rem;
+    overflow-x: hidden;
 }
 MAIN {
     margin-top: 2rem;
 }
-.section_title,
+.title,
 .sticky_text,
 .card_title {
     text-transform: uppercase;
@@ -233,9 +237,8 @@ MAIN {
     word-break: keep-all;
     color: var(--textColor);
     font-weight: 600;
-    padding: 0 2rem;
+    margin: 0 2rem;
     font-size: 2.5em;
-    width: 100%;
     SPAN {
         color: var(--textColor);
         background: none;
@@ -247,7 +250,6 @@ MAIN {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
     height: auto;
 }
 .card {
@@ -256,8 +258,7 @@ MAIN {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    border: solid 2px var(--FC);
+    border: solid 1px var(--FC);
     overflow: hidden;
     .content {
         display: flex;
@@ -290,18 +291,19 @@ MAIN {
     justify-content: center;
     align-items: center;
 }
-.contact_section {
-    width: 100%;
-    min-height: calc(100svh - var(--navHeight));
-    text-align: center;
-    .section_title {
-        padding: 4rem 0;
-    }
-}
 footer {
-    background: var(--bgColorContrast);
-    width: 100%;
+    position: relative;
+    background: var(--bgColor);
     min-height: 10rem;
+    padding: 2rem;
+    .btns_container {
+        float: right;
+        gap: 2rem;
+        .footer_btn {
+            padding: 0.5rem 1rem;
+            border: solid 2px var(--FC);
+        }
+    }
 }
 
 @media screen and (min-width: 750px) {

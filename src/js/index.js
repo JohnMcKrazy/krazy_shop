@@ -20,8 +20,8 @@ const animationIn = (item, delay = 500) => {
 const animationOut = (item, delay = 500) => {
     item.animate([{ transform: `translateX(0)` }, { transform: `translateX(-100%)` }], { duration: delay, fill: `forwards` });
 };
-const navMenu = selector(".nav_menu");
-const menuAction = () => {
+menuBtn.addEventListener("click", () => {
+    const navMenu = selector(".nav_menu");
     if (!menuState) {
         menuState = true;
         animationIn(navMenu);
@@ -29,11 +29,4 @@ const menuAction = () => {
         animationOut(navMenu);
         menuState = false;
     }
-};
-menuBtn.addEventListener("click", () => {
-    menuAction();
-});
-
-selector(".contact_btn").addEventListener("click", () => {
-    menuAction();
 });
