@@ -223,6 +223,10 @@ HEADER {
   font-size: 3rem;
 }
 
+MAIN {
+  margin-top: 2rem;
+}
+
 .section_title,
 .sticky_text,
 .card_title {
@@ -261,6 +265,7 @@ HEADER {
   align-items: center;
   width: 100%;
   border: solid 2px var(--FC);
+  overflow: hidden;
 }
 .card .content {
   display: flex;
