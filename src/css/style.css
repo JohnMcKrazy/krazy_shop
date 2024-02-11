@@ -1,0 +1,344 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+HTML > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+HTML {
+  --lightGray: hsl(0, 0%, 75%);
+  --midGray: hsl(0, 0%, 50%);
+  --darkGray: hsl(0, 0%, 25%);
+  --blackOff: hsl(0, 0%, 15%);
+  --whiteOff: hsl(0, 0%, 85%);
+  --T-UF: all 250ms ease;
+  --T-Fast: all 500ms ease;
+  --T-Mid: all 750ms ease;
+  --T-Slow: all 1000ms ease;
+  --navHeight: 6rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  line-break: loose;
+  letter-spacing: 0.15em;
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100%;
+  min-height: 100svh;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  overflow-x: hidden;
+}
+
+.light_theme {
+  --textColor: hsl(0, 0%, 0%);
+  --bgColor: hsl(0, 0%, 100%);
+  --bgColor: hsl(0, 0%, 0%);
+  --FC: skyblue;
+}
+
+.dark_theme {
+  --textColor: hsl(0, 0%, 100%);
+  --bgColor: hsl(0, 0%, 0%);
+  --bgColorContrast: hsl(0, 0%, 100%);
+  --FC: red;
+}
+
+.krazy_icon .cls-1 {
+  fill: #e10b17;
+}
+.krazy_icon .cls-2 {
+  fill: #fff;
+}
+.krazy_icon .cls-3 {
+  fill: #363636;
+}
+.krazy_icon .cls-4 {
+  fill: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+  color: var(--textColor);
+  background: var(--bgColor);
+  position: relative;
+}
+body img {
+  width: 100%;
+}
+body a {
+  background: none;
+  text-decoration: none;
+}
+body a:visited,
+body a:focus,
+body a:active {
+  color: unset;
+}
+body ul {
+  list-style: none;
+}
+body BUTTON {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+body SVG {
+  width: auto;
+  height: 100%;
+}
+body H1,
+body H2,
+body H3,
+body H4 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border: solid 2px var(--textColor);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease;
+}
+.btn .label_btn {
+  color: var(--textColor);
+  font-weight: 600;
+  transition: all 500ms ease;
+}
+.btn:has(.icon_container) {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.btn:has(.icon_container) .icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 2rem;
+  fill: var(--textColor);
+  transition: all 500ms ease;
+}
+.btn:has(.icon_container):hover {
+  background: var(--textColor);
+}
+.btn:has(.icon_container):hover .label_btn {
+  color: var(--bgColor);
+}
+.btn:has(.icon_container):hover .icon_container {
+  fill: var(--bgColor);
+}
+
+.nav_btn {
+  width: 2rem;
+  height: 2rem;
+}
+.nav_btn .icon_container {
+  fill: var(--textColor);
+}
+
+.menu_btn {
+  width: 3rem;
+  height: 3rem;
+}
+
+.btns_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo_container {
+  height: 3rem;
+  width: auto;
+}
+.logo_container .icon_svg {
+  height: 100%;
+  width: auto;
+}
+
+.nav_top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navHeight);
+  background: var(--bgColor);
+  z-index: 5;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_menu {
+  position: fixed;
+  left: 0;
+  top: var(--navHeight);
+  height: calc(100svh - var(--navHeight));
+  background: var(--bgColor);
+  z-index: 5;
+  transform: translateX(-100%);
+  translate: all 500ms ease;
+}
+.nav_menu .menu_btn {
+  color: var(--textColor);
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+.nav_menu .menu_btn:hover {
+  background: var(--FC);
+}
+
+HEADER {
+  height: 100svh;
+  background: linear-gradient(transparent, var(--bgColor) 90%), url("https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.section_title,
+.sticky_text,
+.card_title {
+  text-transform: uppercase;
+}
+
+.sticky_text {
+  letter-spacing: 0.35em;
+  line-height: 1.5em;
+  word-break: keep-all;
+  color: var(--textColor);
+  font-weight: 600;
+  padding: 0 2rem;
+  font-size: 2.5em;
+  width: 100%;
+}
+.sticky_text SPAN {
+  color: var(--textColor);
+  background: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid 2px var(--FC);
+}
+.card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+.card .content .btn {
+  margin-top: 2rem;
+}
+.card .content .btn .label_btn {
+  font-size: 0.8em;
+}
+.card .content .card_title {
+  text-align: center;
+  color: var(--textColor);
+  font-weight: 800;
+  text-indent: 2px;
+  font-size: 3em;
+}
+
+.sticky_card {
+  min-height: 8rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_section {
+  width: 100%;
+  min-height: calc(100svh - var(--navHeight));
+  text-align: center;
+}
+.contact_section .section_title {
+  padding: 4rem 0;
+}
+
+footer {
+  background: var(--bgColorContrast);
+  width: 100%;
+  min-height: 10rem;
+}
+
+@media screen and (min-width: 750px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .card {
+    width: 100%;
+  }
+  .push_reverse {
+    flex-direction: row-reverse;
+  }
+  .wrapper > * {
+    flex-basis: 100%;
+  }
+  .sticky_card {
+    position: sticky;
+    height: 100svh;
+  }
+  .sticky_text SPAN {
+    display: inline;
+    color: var(--bgColor);
+    background: var(--textColor);
+  }
+}
+@media screen and (min-width: 950px) {
+  .sticky_text {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .sticky_text {
+    font-size: 6em;
+  }
+}
