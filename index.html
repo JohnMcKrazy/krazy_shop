@@ -24,10 +24,8 @@
         <link rel="stylesheet" href="./src/css/normalize.css" />
     </head>
     <body class="dark_theme">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-
+        <button type="button" class="accessibility_btn"><span class="label_btn">Ir A Contenido Principal</span></button>
+        <button type="button" class="accessibility_btn"><span class="label_btn">Ir A Final De La Pagina</span></button>
         <nav class="nav_top">
             <button type="button" class="nav_btn menu_btn">
                 <span class="icon_container">
@@ -114,8 +112,9 @@
                             <path
                                 class="cls-1"
                                 d="M12 21.9967C6.47715 21.9967 2 17.5196 2 11.9967C2 6.47386 6.47715 1.9967 12 1.9967C17.5228 1.9967 22 6.47386 22 11.9967C22 17.5196 17.5228 21.9967 12 21.9967ZM12 19.9967V3.9967C7.58172 3.9967 4 7.57843 4 11.9967C4 16.415 7.58172 19.9967 12 19.9967Z"
-                            ></path></svg
-                    ></span>
+                            ></path>
+                        </svg>
+                    </span>
                 </button>
                 <button type="button" class="nav_btn location_btn">
                     <span class="icon_container">
@@ -143,7 +142,8 @@
             <button type="button" class="menu_btn">PRINCIPAL</button>
         </nav>
         <header>
-            <h1 class="title">Unete<br />a la<br />Locura</h1>
+            <h1 class="title">Join<br />The<br />Kraziness</h1>
+            <button type="button" class="btn"><span class="label_btn">Show Collections Catalog</span></button>
         </header>
         <main>
             <div class="wrapper push_reverse">
@@ -153,84 +153,126 @@
                     </h1>
                 </div>
                 <div class="card_container">
-                    <div class="card card_1">
+                    <article class="card card_1">
+                        <img class="card_img" src="./src/images/1_level_up.webp" alt="" />
                         <div class="content">
-                            <h2 class="card_title">SapioSexual</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">1 Level Up</h2>
+                                <h3 class="card_subtitle">-Weed Lovers Collection-</h3>
+                            </div>
                             <button type="button" class="btn">
                                 <span class="label_btn">Shop Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                                        <path
+                                            class="cls-1"
+                                            d="M4.00488 16V4H2.00488V2H5.00488C5.55717 2 6.00488 2.44772 6.00488 3V15H18.4433L20.4433 7H8.00488V5H21.7241C22.2764 5 22.7241 5.44772 22.7241 6C22.7241 6.08176 22.7141 6.16322 22.6942 6.24254L20.1942 16.2425C20.083 16.6877 19.683 17 19.2241 17H5.00488C4.4526 17 4.00488 16.5523 4.00488 16ZM6.00488 23C4.90031 23 4.00488 22.1046 4.00488 21C4.00488 19.8954 4.90031 19 6.00488 19C7.10945 19 8.00488 19.8954 8.00488 21C8.00488 22.1046 7.10945 23 6.00488 23ZM18.0049 23C16.9003 23 16.0049 22.1046 16.0049 21C16.0049 19.8954 16.9003 19 18.0049 19C19.1095 19 20.0049 19.8954 20.0049 21C20.0049 22.1046 19.1095 23 18.0049 23Z"
+                                        ></path>
                                     </svg>
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="card card_2">
+                    </article>
+                    <article class="card card_2">
+                        <img class="card_img" src="./src/images/3d_sesos.webp" alt="" />
                         <div class="content">
-                            <h2 class="card_title">The Remix</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">3D Sesos</h2>
+                                <h3 class="card_subtitle">-Brainiac Collection-</h3>
+                            </div>
                             <button type="button" class="btn">
                                 <span class="label_btn">Shop Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                                        <path
+                                            class="cls-1"
+                                            d="M4.00488 16V4H2.00488V2H5.00488C5.55717 2 6.00488 2.44772 6.00488 3V15H18.4433L20.4433 7H8.00488V5H21.7241C22.2764 5 22.7241 5.44772 22.7241 6C22.7241 6.08176 22.7141 6.16322 22.6942 6.24254L20.1942 16.2425C20.083 16.6877 19.683 17 19.2241 17H5.00488C4.4526 17 4.00488 16.5523 4.00488 16ZM6.00488 23C4.90031 23 4.00488 22.1046 4.00488 21C4.00488 19.8954 4.90031 19 6.00488 19C7.10945 19 8.00488 19.8954 8.00488 21C8.00488 22.1046 7.10945 23 6.00488 23ZM18.0049 23C16.9003 23 16.0049 22.1046 16.0049 21C16.0049 19.8954 16.9003 19 18.0049 19C19.1095 19 20.0049 19.8954 20.0049 21C20.0049 22.1046 19.1095 23 18.0049 23Z"
+                                        ></path>
                                     </svg>
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="card card_3">
+                    </article>
+                    <article class="card card_3">
+                        <img class="card_img" src="./src/images/fy.webp" alt="" />
                         <div class="content">
-                            <h2 class="card_title">Hot product</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">Hello My Name Is...</h2>
+                                <h3 class="card_subtitle">-Irreverent Collection-</h3>
+                            </div>
                             <button type="button" class="btn">
                                 <span class="label_btn">Shop Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                                        <path
+                                            class="cls-1"
+                                            d="M4.00488 16V4H2.00488V2H5.00488C5.55717 2 6.00488 2.44772 6.00488 3V15H18.4433L20.4433 7H8.00488V5H21.7241C22.2764 5 22.7241 5.44772 22.7241 6C22.7241 6.08176 22.7141 6.16322 22.6942 6.24254L20.1942 16.2425C20.083 16.6877 19.683 17 19.2241 17H5.00488C4.4526 17 4.00488 16.5523 4.00488 16ZM6.00488 23C4.90031 23 4.00488 22.1046 4.00488 21C4.00488 19.8954 4.90031 19 6.00488 19C7.10945 19 8.00488 19.8954 8.00488 21C8.00488 22.1046 7.10945 23 6.00488 23ZM18.0049 23C16.9003 23 16.0049 22.1046 16.0049 21C16.0049 19.8954 16.9003 19 18.0049 19C19.1095 19 20.0049 19.8954 20.0049 21C20.0049 22.1046 19.1095 23 18.0049 23Z"
+                                        ></path>
                                     </svg>
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="card card_4">
+                    </article>
+                    <article class="card card_4">
+                        <img class="card_img" src="./src/images/dangerous_alone.webp" alt="" />
                         <div class="content">
-                            <h2 class="card_title">I don't know</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">It's Dangerous to go Alone</h2>
+                                <h3 class="card_subtitle">-Brainiac Collection-</h3>
+                            </div>
                             <button type="button" class="btn">
                                 <span class="label_btn">Shop Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                                        <path
+                                            class="cls-1"
+                                            d="M4.00488 16V4H2.00488V2H5.00488C5.55717 2 6.00488 2.44772 6.00488 3V15H18.4433L20.4433 7H8.00488V5H21.7241C22.2764 5 22.7241 5.44772 22.7241 6C22.7241 6.08176 22.7141 6.16322 22.6942 6.24254L20.1942 16.2425C20.083 16.6877 19.683 17 19.2241 17H5.00488C4.4526 17 4.00488 16.5523 4.00488 16ZM6.00488 23C4.90031 23 4.00488 22.1046 4.00488 21C4.00488 19.8954 4.90031 19 6.00488 19C7.10945 19 8.00488 19.8954 8.00488 21C8.00488 22.1046 7.10945 23 6.00488 23ZM18.0049 23C16.9003 23 16.0049 22.1046 16.0049 21C16.0049 19.8954 16.9003 19 18.0049 19C19.1095 19 20.0049 19.8954 20.0049 21C20.0049 22.1046 19.1095 23 18.0049 23Z"
+                                        ></path>
                                     </svg>
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="card card_5">
+                    </article>
+                    <article class="card card_5">
+                        <img class="card_img" src="./src/images/think_different.webp" alt="" />
                         <div class="content">
-                            <h2 class="card_title">wait what?</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">Think Different</h2>
+                                <h3 class="card_subtitle">-Brainiac Collection-</h3>
+                            </div>
                             <button type="button" class="btn">
                                 <span class="label_btn">Shop Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                                        <path
+                                            class="cls-1"
+                                            d="M4.00488 16V4H2.00488V2H5.00488C5.55717 2 6.00488 2.44772 6.00488 3V15H18.4433L20.4433 7H8.00488V5H21.7241C22.2764 5 22.7241 5.44772 22.7241 6C22.7241 6.08176 22.7141 6.16322 22.6942 6.24254L20.1942 16.2425C20.083 16.6877 19.683 17 19.2241 17H5.00488C4.4526 17 4.00488 16.5523 4.00488 16ZM6.00488 23C4.90031 23 4.00488 22.1046 4.00488 21C4.00488 19.8954 4.90031 19 6.00488 19C7.10945 19 8.00488 19.8954 8.00488 21C8.00488 22.1046 7.10945 23 6.00488 23ZM18.0049 23C16.9003 23 16.0049 22.1046 16.0049 21C16.0049 19.8954 16.9003 19 18.0049 19C19.1095 19 20.0049 19.8954 20.0049 21C20.0049 22.1046 19.1095 23 18.0049 23Z"
+                                        ></path>
                                     </svg>
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="card card_6">
+                    </article>
+                    <article class="card card_6">
+                        <img class="card_img" src="./src/images/ruta_23.webp" alt="" />
                         <div class="content">
-                            <h2 class="card_title">this is to low</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">Ruta 23</h2>
+                                <h3 class="card_subtitle">-Irreverent Collection-</h3>
+                            </div>
                             <button type="button" class="btn">
                                 <span class="label_btn">Shop Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                                        <path
+                                            class="cls-1"
+                                            d="M4.00488 16V4H2.00488V2H5.00488C5.55717 2 6.00488 2.44772 6.00488 3V15H18.4433L20.4433 7H8.00488V5H21.7241C22.2764 5 22.7241 5.44772 22.7241 6C22.7241 6.08176 22.7141 6.16322 22.6942 6.24254L20.1942 16.2425C20.083 16.6877 19.683 17 19.2241 17H5.00488C4.4526 17 4.00488 16.5523 4.00488 16ZM6.00488 23C4.90031 23 4.00488 22.1046 4.00488 21C4.00488 19.8954 4.90031 19 6.00488 19C7.10945 19 8.00488 19.8954 8.00488 21C8.00488 22.1046 7.10945 23 6.00488 23ZM18.0049 23C16.9003 23 16.0049 22.1046 16.0049 21C16.0049 19.8954 16.9003 19 18.0049 19C19.1095 19 20.0049 19.8954 20.0049 21C20.0049 22.1046 19.1095 23 18.0049 23Z"
+                                        ></path>
                                     </svg>
                                 </span>
                             </button>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="wrapper">
@@ -240,11 +282,14 @@
                     </h1>
                 </div>
                 <div class="card_container">
-                    <div class="card card_1">
+                    <article class="card card_1">
                         <div class="content">
-                            <h2 class="card_title">Please Kill me</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">1 Level Up</h2>
+                                <h3 class="card_subtitle">Weed Lover Edition</h3>
+                            </div>
                             <button type="button" class="btn">
-                                <span class="label_btn">Shop Now</span>
+                                <span class="label_btn">Show Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
@@ -252,12 +297,15 @@
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="card card_2">
+                    </article>
+                    <article class="card card_2">
                         <div class="content">
-                            <h2 class="card_title">I need a job</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">1 Level Up</h2>
+                                <h3 class="card_subtitle">Weed Lover Edition</h3>
+                            </div>
                             <button type="button" class="btn">
-                                <span class="label_btn">Shop Now</span>
+                                <span class="label_btn">Show Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
@@ -265,12 +313,15 @@
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="card card_3">
+                    </article>
+                    <article class="card card_3">
                         <div class="content">
-                            <h2 class="card_title">This isn't funny anymore</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">1 Level Up</h2>
+                                <h3 class="card_subtitle">Weed Lover Edition</h3>
+                            </div>
                             <button type="button" class="btn">
-                                <span class="label_btn">Shop Now</span>
+                                <span class="label_btn">Show Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
@@ -278,12 +329,15 @@
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="card card_4">
+                    </article>
+                    <article class="card card_4">
                         <div class="content">
-                            <h2 class="card_title">Finally</h2>
+                            <div class="card_info">
+                                <h2 class="card_title">1 Level Up</h2>
+                                <h3 class="card_subtitle">Weed Lover Edition</h3>
+                            </div>
                             <button type="button" class="btn">
-                                <span class="label_btn">Shop Now</span>
+                                <span class="label_btn">Show Now</span>
                                 <span class="icon_container">
                                     <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
@@ -291,67 +345,15 @@
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="card card_5">
-                        <div class="content">
-                            <h2 class="card_title">O wait One more</h2>
-                            <button type="button" class="btn">
-                                <span class="label_btn">Shop Now</span>
-                                <span class="icon_container">
-                                    <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card card_6">
-                        <div class="content">
-                            <h2 class="card_title">Or maybe 2</h2>
-                            <button type="button" class="btn">
-                                <span class="label_btn">Shop Now</span>
-                                <span class="icon_container">
-                                    <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card card_1">
-                        <div class="content">
-                            <h2 class="card_title">This shit never ends?</h2>
-                            <button type="button" class="btn">
-                                <span class="label_btn">Shop Now</span>
-                                <span class="icon_container">
-                                    <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card card_2">
-                        <div class="content">
-                            <h2 class="card_title">Thx</h2>
-                            <button type="button" class="btn">
-                                <span class="label_btn">Shop Now</span>
-                                <span class="icon_container">
-                                    <svg class="icon_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path class="cls-1" d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </main>
         <footer>
             <span>Pagina Replicada por John Krazy</span>
             <div class="btns_container">
-                <a href="" target="_blank" class="footer_btn"> legales (Demo Btn) </a>
-                <a href="" target="_blank" class="footer_btn"> Contacto (Demo Btn) </a>
+                <a href="" target="_blank" class="footer_btn">legales</a>
+                <a href="" target="_blank" class="footer_btn">Contacto</a>
             </div>
         </footer>
     </body>
